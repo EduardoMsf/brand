@@ -1,4 +1,5 @@
-import React, { useMemo } from "react";
+import { useMemo } from "react";
+import type { FC } from "react";
 import { motion } from "framer-motion";
 
 interface Particle {
@@ -12,7 +13,7 @@ interface Particle {
 
 const PARTICLE_COUNT = 60;
 
-const Particles: React.FC = () => {
+const Particles: FC = () => {
   const particles = useMemo<Particle[]>(() => {
     return Array.from({ length: PARTICLE_COUNT }).map((_, i) => ({
       id: i,
