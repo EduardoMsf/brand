@@ -5,7 +5,9 @@
       "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\lalit\\\\Documents\\\\projects\\\\react\\\\brand\" -Depth 2 | Where-Object { $_.FullName -notmatch 'node_modules' } | Format-Table -Property Mode, Name, FullName)",
       "Bash(npx tsc *)",
       "Bash(Remove-Item \"C:\\\\Users\\\\lalit\\\\Documents\\\\projects\\\\react\\\\brand\\\\src\\\\context\\\\LangContext.ts\" -ErrorAction SilentlyContinue)",
-      "Bash(Write-Output \"done\")"
+      "Bash(Write-Output \"done\")",
+      "Bash(claude doctor *)",
+      "PowerShell(claude doctor *)"
     ]
   }
 }
