@@ -45,11 +45,7 @@ export default function Projects() {
         {tx.items.map((project, i) => (
           <a
             key={project.num}
-            href={
-              project.num === "01"
-                ? "https://for-fun-eduardomsf-eduardo-samaniegos-projects.vercel.app/"
-                : "#"
-            }
+            href={project.link}
             target="_blank"
             className="project-item reveal"
             data-delay={`${i * 0.1}s`}
